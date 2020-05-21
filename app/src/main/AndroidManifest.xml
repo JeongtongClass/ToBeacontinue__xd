@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidapp.tobeacontinue">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Todolist.CalendarAddActivity"></activity>
+        <activity android:name=".Todolist.CalendarTodolist" />
+        <activity android:name=".Todolist.MemoWrite" />
+        <activity
+            android:name=".Todolist.OutsideTodolist"
+            android:label="집 밖" />
+        <activity
+            android:name=".Todolist.CafeteriaTodolist"
+            android:label="학생회관" />
+        <activity
+            android:name=".Todolist.SchoolTodolist"
+            android:label="한누리관" />
+        <activity
+            android:name=".Todolist.HouseTodolist"
+            android:label="집 안" />
+        <activity
+            android:name=".MenuActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".etc.Settings" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
